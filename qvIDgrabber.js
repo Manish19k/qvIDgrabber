@@ -10,3 +10,4 @@ ogHtmlOuter.style.position = "relative", ogHtmlOuter.style.display = "inline-fle
 ogHtmlOuter.style.userSelect = "text", ogHtmlOuter.style.color = "#FFFFFF", ogHtmlOuter.className = "ogOverlay",
  ogHtmlOuter.innerHTML = '<a id="ogOverlay' + i + '" onclick="ogCopyToClipboard(document.getElementById(\'ogOverlay' + i + '\').innerHTML)" style="color:#FFFFFF;text-decoration:none;user-select:text;">'
  + ogElement.getAttribute("id") + "</a>", ogElement.appendChild(ogHtmlOuter), console.log("Element " + i + " id: " + ogElement.getAttribute("id")) } function ogCopyToClipboard(e) { function t(t) { t.clipboardData.setData("text/plain", e), t.preventDefault() } document.addEventListener("copy", t), document.execCommand("copy"), document.removeEventListener("copy", t), console.log("Copied " + e + " to clipboard") }
+//temp
